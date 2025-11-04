@@ -1,14 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// importation des composant.
+import Header from "./components/Header.jsx";
+import ArticleList from "./components/ArticleList.jsx";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>Welcome On My Blog My Friend 🙌​ high five</h1>
+      <Header />
+      <main>
+        <ArticleList />
+      </main>
     </>
   );
 }
