@@ -1,6 +1,4 @@
 .first-thumbnail {
   display: flex;
-}
-.second-thumbnail {
-  display: flex;
+  flex-direction: row;
 }

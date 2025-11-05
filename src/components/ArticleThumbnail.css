@@ -16,3 +16,7 @@ article > p {
 article > h3 {
   color: black;
 }
+.Article-One-By-One {
+  padding: 20px;
+  border: thick double grey;
+}

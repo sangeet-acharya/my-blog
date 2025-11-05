@@ -21,7 +21,7 @@ function Header() {
           Me connecter
         </a>
       </div>
-      <h1>{title}</h1>
+      <h1 className="H1-Header">{title}</h1>
     </nav>
   );
 }

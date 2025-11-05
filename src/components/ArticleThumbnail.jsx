@@ -13,7 +13,7 @@ function ArticleThumbnail() {
   };
   return (
     <div>
-      <article>
+      <article className="Article-One-By-One">
         <img src={article.image} alt="image-de-vignette" />
         <p className="create">{article.createdAt.toDateString()}</p>
         <h3>{article.title}</h3>

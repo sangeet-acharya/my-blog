@@ -10,7 +10,7 @@ function ArticleList() {
         <ArticleThumbnail />
         <ArticleThumbnail />
       </div>
-      <div className="second-thumbnail">
+      <div className="first-thumbnail">
         <ArticleThumbnail />
         <ArticleThumbnail />
         <ArticleThumbnail />

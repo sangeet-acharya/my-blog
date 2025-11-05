@@ -6,7 +6,7 @@ body {
 .img-lien {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
 }
 .img-lien > img {
@@ -31,5 +31,6 @@ h1 {
   color: black;
   border-top: solid grey;
   border-bottom: solid grey;
+  margin-top: 0;
   padding-bottom: 10px;
 }
