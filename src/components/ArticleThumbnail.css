@@ -1,23 +1,37 @@
 article {
   text-align: left;
+  align-items: center;
 }
 .create {
   font-size: 0.8rem;
-  color: grey;
+  color: white;
 }
 article > img {
-  width: 250px;
-  height: 200px;
+  width: auto;
+  height: 150px;
   border-radius: 10px;
 }
 article > p {
-  color: grey;
+  color: white;
 }
 article > h3 {
+  text-align: center;
   color: black;
+  background-color: white;
 }
 .Article-One-By-One {
   padding: 10px;
-  margin: 10px;
-  border: thick double grey;
+  margin: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: thick double whitesmoke;
+}
+.likeButton {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: crosshair;
+}
+.likeButton:hover .iconLike {
+  transform: scale(1.1);
 }

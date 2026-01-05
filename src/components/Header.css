@@ -17,6 +17,9 @@ body {
 .img-lien > a {
   color: black;
 }
+.img-lien > a:hover {
+  color: #9f45b0;
+}
 .img-lien > .login {
   color: white;
   background-color: black;
@@ -24,7 +27,7 @@ body {
   border-radius: 10px;
 }
 .login:hover {
-  background-color: #b09894;
+  background-color: #ffe4f2;
 }
 h1 {
   font-size: 50px;

@@ -2,3 +2,10 @@
   display: flex;
   flex-direction: row;
 }
+.Barre-De-Recherche {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  color: black;
+}
