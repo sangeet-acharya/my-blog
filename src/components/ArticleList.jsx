@@ -1,6 +1,6 @@
 import ArticleThumbnail from "./ArticleThumbnail.jsx";
 import "./ArticleList.css";
-
+import { useState } from "react";
 export default function ArticleList() {
   const articles1 = [
     {
@@ -117,9 +117,21 @@ export default function ArticleList() {
       categoryName: "planète gazeuse",
     },
   ];
+  const [searchTerm, setSearchTerm] = useState("");
+  const filteredArticles = articles1.filter((article) => {
+    return (
+      article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      article.content.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  });
   return (
     <div>
-      <input type="text" className="Barre-De-Recherche" />
+      <input
+        type="text"
+        className="Barre-De-Recherche"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
       <div
         style={{
           display: "flex",
@@ -130,7 +142,7 @@ export default function ArticleList() {
         {/* cest comme filter , cela vas dans la tableau d'objet et 
         selectionne un par un les objets sauf que comparer a filter
         il ne cree pas un nouveau tableau vide ou il met tout les donner filtrer */}
-        {articles1.map((article) => (
+        {filteredArticles.map((article) => (
           //key une function natifs
           //on dis que le article en params est = a article qu'on pourrais
           //utiliser en suite pour pouvoir les appeler dans les autres fichier.
