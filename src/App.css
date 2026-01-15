@@ -50,3 +50,7 @@ main {
   background-image: url(https://static.vecteezy.com/ti/photos-gratuite/p2/29773460-sur-le-theme-de-l-espace-contexte-avec-galaxies-et-planetes-gratuit-photo.jpg);
   background-size: cover;
 }
+.div-hp {
+  color: black;
+  font-size: 50px;
+}

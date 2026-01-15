@@ -1,0 +1,77 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "image": "https://starwalk.space/gallery/images/mercury-earth-moon-size/fr/1920x1080.jpg",
+      "title": "Mercure",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "isLiked": false,
+      "likeCount": 0,
+      "content": "Période orbitale : 88 jours\nDurée du jour : 176j 0h 0m\nMasse : 3,285 × 10^23 kg (0,055 M⊕)\nGravité : 3,7 m/s²\nSuperficie : 74,8 millions km²",
+      "categoryName": "planète tellurique"
+    },
+    {
+      "id": 2,
+      "image": "https://www.shutterstock.com/shutterstock/videos/1107723731/thumb/1.jpg?ip=x480",
+      "title": "Vénus",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "likeCount": 0,
+      "content": "Distance du Soleil : 108,2 millions km\nRayon : 6 051,8 km\nDurée du jour : 243j 0h 0m\nMasse : 4,867 × 10^24 kg (0,815 M⊕)\nPériode orbitale : 225 jours",
+      "categoryName": "planète tellurique"
+    },
+    {
+      "id": 3,
+      "image": "https://www.radiofrance.fr/pikapi/images/d52b6f36-c7f2-40ee-9d04-2bbdc9cd0ab8/1200x680?webp=false",
+      "title": "Terre",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "likeCount": 0,
+      "content": "Distance du Soleil : 149 597 870,7 km\nRayon : 6 378,137 km\nDurée du jour : 24h 0m\nMasse : 5,972 × 10^24 kg (1 M⊕)\nPériode orbitale : 365 jours",
+      "categoryName": "planète tellurique"
+    },
+    {
+      "id": 4,
+      "image": "https://cnes.fr/sites/default/files/2024-06/planete-mars-rosetta-2007.jpg",
+      "title": "Mars",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "likeCount": 0,
+      "content": "Gravité : 3,73 m/s²\nDurée du jour : 1j 0h 36m\nRayon : 3 389,5 km\nDistance du Soleil : 227,9 millions km\nPériode orbitale : 687 jours",
+      "categoryName": "planète tellurique"
+    },
+    {
+      "id": 5,
+      "image": "https://arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/CAZAZ4F6H7R6DJ2TLUUMXZEOBU.jpg",
+      "title": "Jupiter",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "likeCount": 0,
+      "content": "Distance du Soleil : 778,5 millions km\nRayon : 69 911 km\nGravité : 24,79 m/s²\nMasse : 1,898 × 10^27 kg (317,8 M⊕)\nPériode orbitale : 12 ans",
+      "categoryName": "planète gazeuse"
+    },
+    {
+      "id": 6,
+      "image": "https://img.freepik.com/photos-premium/planete-saturne-dans-espace_891301-4362.jpg",
+      "title": "Saturne",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "likeCount": 0,
+      "content": "Durée du jour : 0j 10h 34m\nDistance du Soleil : 1,434 milliard km\nMasse : 5,683 × 10^26 kg (95,16 M⊕)\nGravité : 10,44 m/s²\nPériode orbitale : 29 ans",
+      "categoryName": "planète gazeuse"
+    },
+    {
+      "id": 7,
+      "image": "https://media.istockphoto.com/id/1227245892/photo/planet-uranus.jpg?s=612x612&w=0&k=20&c=euacZLpZhzbXE6dbC0SBLW4YKMVBL647I_amf3UgmxM=",
+      "title": "Uranus",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "likeCount": 0,
+      "content": "Durée du jour : 0j 17h 14m\nDistance du Soleil : 2,871 milliards km\nRayon : 25 362 km\nDate de découverte : 13 mars 1781\nMasse : 8,681 × 10^25 kg (14,54 M⊕)",
+      "categoryName": "planète gazeuse"
+    },
+    {
+      "id": 8,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMQadrO7VccP8jKO75qV0jFpUuUlrD_i5taw&s",
+      "title": "Neptune",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "likeCount": 0,
+      "content": "Rayon : 24 622 km\nDurée du jour : 0j 16h 6m\nDate de découverte : 23/sep/1846\nMasse : 1,024 × 10^26 kg (17,15 M⊕)\nPériode orbitale : 165 ans",
+      "categoryName": "planète gazeuse"
+    }
+  ]
+}

@@ -40,9 +40,10 @@ export default function ArticleThumbnail({ article }) {
 
   return (
     <div>
+      <Link></Link>
       <article className="Article-One-By-One">
         <img src={article.image} alt={article.title} />
-        <p className="create">{article.createdAt.toDateString()}</p>
+        <p className="create">{article.createdAt}</p>
         <h3>{article.title}</h3>
         <p style={{ whiteSpace: "pre-line" }}>{article.content}</p>
         {/* bouton like */}

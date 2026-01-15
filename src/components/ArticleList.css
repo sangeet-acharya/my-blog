@@ -9,3 +9,12 @@
   background-color: whitesmoke;
   color: black;
 }
+.Chargement {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  border-top: solid grey;
+  border-bottom: solid grey;
+  background-color: rgb(255, 255, 255);
+  margin-top: 0;
+  padding: 10px;
+}
