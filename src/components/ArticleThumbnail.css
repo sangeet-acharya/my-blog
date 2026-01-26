@@ -6,7 +6,7 @@ article {
   font-size: 0.8rem;
   color: white;
 }
-article > img {
+.article-img {
   width: auto;
   height: 150px;
   border-radius: 10px;
@@ -14,7 +14,7 @@ article > img {
 article > p {
   color: white;
 }
-article > h3 {
+.article-title {
   text-align: center;
   color: black;
   background-color: white;

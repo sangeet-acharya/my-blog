@@ -2,6 +2,7 @@ import "./ArticleThumbnail.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function ArticleThumbnail({ article }) {
   //Déclare l'état du "like"
@@ -11,7 +12,7 @@ export default function ArticleThumbnail({ article }) {
   const [like, setLike] = useState(false);
   //like → la valeur actuelle de l’état (ici, un booléen).
   //setLike → la fonction qui permet de modifier cette valeur.
-  //(false) → la valeur initiale, donc au départ, l’article n’est pas liké.
+  //(false) → la valeur initiale, donc au départ , l’article n’est pas liké.
 
   //En résumé :
   //like commence à false → pas liké.
@@ -40,12 +41,19 @@ export default function ArticleThumbnail({ article }) {
 
   return (
     <div>
-      <Link></Link>
       <article className="Article-One-By-One">
-        <img src={article.image} alt={article.title} />
-        <p className="create">{article.createdAt}</p>
-        <h3>{article.title}</h3>
-        <p style={{ whiteSpace: "pre-line" }}>{article.content}</p>
+        <Link to={`/articlePage/${article.id}`}>
+          <img
+            className="article-img"
+            src={article.image}
+            alt={article.title}
+          />
+          <p className="create">{article.createdAt}</p>
+          <h3 className="article-title">{article.title}</h3>
+          <p style={{ whiteSpace: "pre-line", color: "white" }}>
+            {article.content}
+          </p>
+        </Link>
         {/* bouton like */}
         <button onClick={toggleLike} className="likeButton">
           <FontAwesomeIcon

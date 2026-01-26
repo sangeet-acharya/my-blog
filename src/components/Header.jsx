@@ -15,7 +15,7 @@ export default function Header() {
           alt="Logo-de-site"
         />
         <NavLink to="/">Accueil</NavLink>
-        <NavLink to="/articles">Articles</NavLink>
+        <NavLink to="/articlespage">Articles</NavLink>
         <a href="#">L'Ecole</a>
         <Link>Contact</Link>
         <a href="#" className="login">
