@@ -38,7 +38,7 @@ export default function ArticleList() {
             //`q=`            | Mot-clé pour rechercher dans tous les champs texte (json-server)  |
             //`${searchTerm}` | Valeur tapée par l’utilisateur, injectée dynamiquement dans l’URL |
 
-            `http://localhost:3001/articles?q=${searchTerm}` //La syntaxe ?param=value
+            `http://localhost:3001/articles?q=${searchTerm}`, //La syntaxe ?param=value
           );
           const data = await response.json();
           //Avant de mettre à jour le state, on vérifie si cancelled est toujours false
@@ -87,7 +87,7 @@ export default function ArticleList() {
     },
     //Le tableau vide [] signifie que ce useEffect ne s’exécute qu’une seule fois, au montage du composant.
     //Donc les articles ne sont chargés qu’au démarrage.
-    [searchTerm] // 🔹 on dépend de searchTerm pour relancer le fetch à chaque frappe
+    [searchTerm], // 🔹 on dépend de searchTerm pour relancer le fetch à chaque frappe
   );
 
   //barre de nav toutes en miniscules.
