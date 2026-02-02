@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import "./AllPages.css";
 
 export default function CreateArticlePage() {
   const [newArticle, setNewArticle] = useState({
@@ -49,7 +50,7 @@ export default function CreateArticlePage() {
   }
 
   return (
-    <form method="post" onSubmit={handleSubmit}>
+    <form method="post" onSubmit={handleSubmit} className="form-post">
       <input
         type="text"
         placeholder="title"
@@ -59,6 +60,7 @@ export default function CreateArticlePage() {
         }
         required
       />
+      <br />
 
       <textarea
         placeholder="content"
@@ -68,8 +70,9 @@ export default function CreateArticlePage() {
         }
         required
       />
+      <br />
 
-      <button type="submit" disabled={isLoading}>
+      <button type="submit" disabled={isLoading} className="btn-post-article">
         {isLoading ? "Création..." : "Créer l’article"}
       </button>
     </form>

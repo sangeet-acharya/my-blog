@@ -16,7 +16,7 @@ export default function Header() {
         />
         <NavLink to="/">Accueil</NavLink>
         <NavLink to="/articlespage">Articles</NavLink>
-        <a href="#">L'Ecole</a>
+        <NavLink to="/articles/new">Create New Article</NavLink>
         <Link>Contact</Link>
         <a href="#" className="login">
           Me connecter

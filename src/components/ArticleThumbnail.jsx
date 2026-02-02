@@ -42,7 +42,7 @@ export default function ArticleThumbnail({ article }) {
   return (
     <div>
       <article className="Article-One-By-One">
-        <Link to={`/articlePage/${article.id}`}>
+        <Link to={`/articlepage/${article.id}`}>
           <img
             className="article-img"
             src={article.image}

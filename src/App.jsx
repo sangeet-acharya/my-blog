@@ -8,6 +8,7 @@ import ArticlePage from "./pages/ArticlePage";
 import ArticlesPage from "./pages/ArticlesPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import CreateArticlePage from "./pages/CreateArticlePage";
+import ArticleEditPage from "./pages/ArticleEditPage";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/articlespage" element={<ArticlesPage />} />
+        <Route path="/article/:id/edit" element={<ArticleEditPage />} />
         <Route path="/articles/new" element={<CreateArticlePage />} />
         <Route path="/articlepage/:id" element={<ArticlePage />} />
         <Route path="*" element={<NotFoundPage />} />

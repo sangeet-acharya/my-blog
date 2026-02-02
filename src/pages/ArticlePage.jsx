@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
+import "./AllPages.css";
+import toast from "react-hot-toast";
 
 export default function ArticlePage() {
   //useParams te permet de récupérer l’id de l’article depuis l’URL dynamique.
@@ -10,6 +12,9 @@ export default function ArticlePage() {
   // un etat pour stocker l'article récupéré.
   //On initialise article avec null ou un tableau vide, selon ce que ton API renvoie.
   const [article, setArticle] = useState(null);
+
+  // redirection vers la page pour edit la page
+  const navigate = useNavigate();
 
   //Pourquoi on met ça dans useEffect :
   //On veut lancer le fetch au chargement du composant
@@ -31,6 +36,33 @@ export default function ArticlePage() {
     };
     fetchArticle(); // on exécute la fonction
   }, [id]);
+
+  function deleteArticle() {
+    const confirmDelete = window.confirm(
+      "Êtes-vous sûr de vouloir supprimer cet article ?",
+    );
+    fetch(`http://localhost:3001/articles/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`Erreur HTTP : ${res.status}`);
+        }
+        toast.success("Article supprimé avec succés !");
+
+        setTimeout(() => {
+          navigate("/articlespage");
+        }, 1000);
+      })
+      .catch((err) => {
+        toast.err(
+          setError(
+            err.message || "une erreur est servenue lors de la suppression",
+          ),
+        );
+      });
+  }
+
   if (article) {
     return (
       <main>
@@ -41,6 +73,12 @@ export default function ArticlePage() {
         <p style={{ whiteSpace: "pre-line", color: "white" }}>
           {article.content}
         </p>
+        <div className="cont-btn-edit">
+          <Link to={`/article/${article.id}/edit`} className="btn-edit">
+            Edit
+          </Link>
+          <button onClick={deleteArticle}>Delete Article</button>
+        </div>
       </main>
     );
   }
